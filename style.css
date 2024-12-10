@@ -1,49 +1,99 @@
-/* Základní reset */
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background-color: #f4f4f4;
   color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Horní banner */
-.top-banner {
-  margin: 20px 0;
+.top-bar {
+  background-color: #222;
+  color: #fff;
   text-align: center;
+  padding: 10px 0;
 }
 
-/* Hlavní kontejner */
-.main-container {
+.container {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
-  margin: 20px auto;
-  align-items: flex-start;
+  margin: 20px;
 }
 
-/* Postranní banner */
-.side-banner {
+.left-sidebar,
+.right-sidebar {
+  width: 20%;
+  min-height: 500px;
+  background-color: #e4e4e4;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.left-sidebar {
   margin-right: 20px;
 }
 
-/* Obsah */
-.content {
-  flex: 1;
-  padding: 20px;
-  text-align: left;
+.right-sidebar {
+  margin-left: 20px;
 }
 
-.content h1 {
-  font-size: 36px;
-  font-weight: bold;
-  text-decoration: underline;
+.right-sidebar .user-profile {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.content p {
-  font-size: 18px;
-  line-height: 1.6;
+.right-sidebar .user-profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.right-sidebar .vertical-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-sidebar .vertical-menu li {
+  margin: 10px 0;
+}
+
+.right-sidebar .vertical-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.about {
+  background-color: #e8ffe8;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.extra-content {
+  margin-top: 20px;
+  height: 200px;
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #222;
+  color: #fff;
 }
